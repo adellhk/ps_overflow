@@ -48,7 +48,7 @@ User:
   - (str) email
   - (str) name
   - (str) pw
-  - (int) par_score = 100 # logarthmic downwards bullshit here
+  - (int) par_score = 100 # logarthmic downwards
   - has_many :questions
   - has_many :answers
 
@@ -60,3 +60,5 @@ Category:
 Category_Questions:
   - (int) question_id
   - (int) category_id
+
+

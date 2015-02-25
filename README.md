@@ -48,7 +48,7 @@ User:
   - (str) email
   - (str) name
   - (str) pw
-  - (int) parScore = 1000 # logarthmic downwards bullshit here
+  - (int) par_score = 100 # logarthmic downwards bullshit here
   - has_many :questions
   - has_many :answers
 

@@ -4,7 +4,8 @@ class CreateAnswers < ActiveRecord::Migration
       t.string :title
       t.text :content
       t.integer :question_id
-      t.integer :votes, default: 0
+      t.integer :user_id
+      t.integer :vote_count, default: 0
 
       t.timestamps
     end

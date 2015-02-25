@@ -60,5 +60,3 @@ Category:
 Category_Questions:
   - (int) question_id
   - (int) category_id
-
-

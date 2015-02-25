@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
   def show
+    render json: Question.find(params[:id]), status: 200
   end
 
   def index
@@ -8,14 +9,26 @@ class QuestionsController < ApplicationController
   end
 
   def create
+    Question.create(
+      question_id: params[:question_id],
+      title: params[:title],
+      content: params[:content],
+      user_id: params[:user_id]
+      )
   end
 
   def new
+    @question = Question.new
   end
 
   def delete
+    Question.find(params[:id]).destroy
   end
 
   def edit
+    Question.find(params[:id]).update(
+      title: params[:title],
+      content: params[:content]
+      )
   end
 end

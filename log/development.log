@@ -2422,3 +2422,1829 @@ Migrating to CreateUsers (20150225184954)
   [1m[35mCategory Load (0.5ms)[0m  SELECT  "categories".* FROM "categories" INNER JOIN "category_questions" ON "categories"."id" = "category_questions"."category_id" WHERE "category_questions"."question_id" = $1  ORDER BY "categories"."id" ASC LIMIT 1  [["question_id", 2]]
   [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions"   ORDER BY "questions"."id" DESC LIMIT 1[0m
   [1m[35mCategory Load (0.4ms)[0m  SELECT  "categories".* FROM "categories" INNER JOIN "category_questions" ON "categories"."id" = "category_questions"."category_id" WHERE "category_questions"."question_id" = $1  ORDER BY "categories"."id" DESC LIMIT 1  [["question_id", 2]]
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 815ms (Views: 814.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 181ms (Views: 180.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 11:43:12 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:15 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 11:43:16 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 143ms (Views: 143.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 11:43:19 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 161ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 158ms (Views: 157.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 158ms (Views: 157.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 178ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:20 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 11:43:21 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:47:33 -0800
+
+ActionController::RoutingError (uninitialized constant AnswersController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.9ms)
+
+
+Started GET "/api/questions/1/answer" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"api/questions/1/answer"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 11:47:52 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:47:55 -0800
+
+ActionController::RoutingError (uninitialized constant AnswersController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:48:30 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by' for nil:NilClass):
+  app/controllers/answers_controller.rb:7:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:48:31 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by' for nil:NilClass):
+  app/controllers/answers_controller.rb:7:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:48:37 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."question_id" = 1 LIMIT 1[0m
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:48:49 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = 1
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 2.1ms)
+  [1m[36mQuestion Load (0.8ms)[0m  [1mSELECT  "questions".* FROM "questions"   ORDER BY "questions"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/questions/1/answers/1" for 127.0.0.1 at 2015-02-25 11:58:12 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"1", "id"=>"1"}
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/questions/1/answers/2" for 127.0.0.1 at 2015-02-25 11:58:14 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"1", "id"=>"2"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/1/answers" for 127.0.0.1 at 2015-02-25 11:58:20 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = 1[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/2/answers/1" for 127.0.0.1 at 2015-02-25 11:58:24 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"1"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/2/answers" for 127.0.0.1 at 2015-02-25 11:58:26 -0800
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"2"}
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = 2[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/2/answers/new/" for 127.0.0.1 at 2015-02-25 11:58:28 -0800
+Processing by AnswersController#new as HTML
+  Parameters: {"question_id"=>"2"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template answers/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/Desktop/jamal-adell/ps_overflow/app/views"
+):
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/api/questions/2/answers/1" for 127.0.0.1 at 2015-02-25 11:58:32 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"1"}
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/questions/2/answers/1" for 127.0.0.1 at 2015-02-25 11:58:55 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"1"}
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/questions/2/answers/1" for 127.0.0.1 at 2015-02-25 12:01:07 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"1"}
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers"  WHERE "answers"."question_id" = 2 AND "answers"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Answer with 'id'=1 [WHERE "answers"."question_id" = 2]):
+  app/controllers/answers_controller.rb:5:in `show'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/api/questions/2/answers/3" for 127.0.0.1 at 2015-02-25 12:01:10 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"3"}
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."question_id" = 2 AND "answers"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/2/answers/3" for 127.0.0.1 at 2015-02-25 12:01:11 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"3"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers"  WHERE "answers"."question_id" = 2 AND "answers"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/questions/2/answers/4" for 127.0.0.1 at 2015-02-25 12:01:13 -0800
+Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"4"}
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."question_id" = 2 AND "answers"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 152ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:03:54 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 170ms (Views: 169.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:04:16 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:04:17 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 246ms (Views: 245.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:54 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 136ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:07:56 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:08:26 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.5ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 62ms (Views: 7.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:08:38 -0800
+
+ActionController::RoutingError (uninitialized constant QuestionController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:09:04 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:09:13 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:10:28 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:10:29 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 193ms (Views: 193.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:10:36 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 171ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:12:44 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:12:45 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 148.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:00 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:13:01 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 159ms (Views: 158.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:13:32 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 187ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 12:13:38 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:39:04 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 329ms (Views: 328.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"questions"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+
+
+Started GET "/questions/index" for 127.0.0.1 at 2015-02-25 13:39:55 -0800
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"questions/index"}
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 144ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/question.css?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/todos/index.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/controllers/homeCtrl.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/answer.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/controllers/todos.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/ng-app/service/Question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/question.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 13:39:56 -0800
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:43:23 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 210ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:43:50 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:43:59 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 221ms (Views: 220.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:44:45 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 194ms (Views: 194.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:45:16 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 175ms (Views: 174.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:45:56 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 235ms (Views: 234.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:48:46 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:48:46 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 212ms (Views: 211.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:48:52 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:48:52 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 204ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:49:18 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:49:18 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 228ms (Views: 227.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:49:42 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:49:42 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 192ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:49:43 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:49:43 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 222ms (Views: 222.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:49:54 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:49:54 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:53:44 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:53:44 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:53:54 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:53:54 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 248ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:54:10 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:54:10 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:54:17 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 177ms (Views: 177.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:54:35 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.6ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:54:35 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:54:35 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 228ms (Views: 227.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:54:58 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:54:58 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 211ms (Views: 211.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:57:58 -0800
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:57:58 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 245ms (Views: 244.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2015-02-25 13:58:04 -0800
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/angular.min.js.map" for 127.0.0.1 at 2015-02-25 13:58:04 -0800
+Processing by ApplicationController#index as 
+  Parameters: {"path"=>"angular.min.js"}
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 193ms (Views: 192.9ms | ActiveRecord: 0.0ms)

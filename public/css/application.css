@@ -32,3 +32,11 @@
   font-weight: bold;
 }
 
+.new_answer, .new_question {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: table;
+  width: 40%;
+  border-bottom: 1px solid black;
+}

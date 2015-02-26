@@ -25,8 +25,11 @@ app.controller("UsersLoginCtrl", function ($scope, $http, $routeParams) {
     console.log('trying to usersLogin');
     // Janky place to store user info & auth
     $scope.session = {}
+
+    // Submit credentials to database
     $http.post('api/users/login', {
-      user_id: $scope.credentials.user_id
+      user_id: $scope.credentials.user_id,
+      password: $scope.credentials.password
     }).
     success(function(data){
       console.log('able to usersLogin')
@@ -36,7 +39,7 @@ app.controller("UsersLoginCtrl", function ($scope, $http, $routeParams) {
     }).
     error(function(data){
       console.log('unable to usersLogin')
-      $scope.session.display = "no such user :("
+      $scope.session.display = "something went wrong :("
     });
   };
   // $scope.message = "hilo"

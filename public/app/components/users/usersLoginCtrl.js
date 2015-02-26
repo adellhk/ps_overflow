@@ -16,7 +16,8 @@
 // }]);
 app.controller("UsersLoginCtrl", function ($scope, $http, $routeParams) {
   $scope.credentials = {
-    user_id: "",
+    // can be username or email
+    identifier: "",
     password: ""
   };
 
@@ -28,7 +29,7 @@ app.controller("UsersLoginCtrl", function ($scope, $http, $routeParams) {
 
     // Submit credentials to database
     $http.post('api/users/login', {
-      user_id: $scope.credentials.user_id,
+      identifier: $scope.credentials.identifier,
       password: $scope.credentials.password
     }).
     success(function(data){

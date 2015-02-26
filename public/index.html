@@ -5,21 +5,15 @@
 
 <body ng-app="ParOverflow">
 
-  <h1>A STATIC PAGE</h1>
-  <div ng-controller='HomeCtrl'>
-    <input ng-model="variable">
-    <div>
-      <h2>{{variable}}</h2>
-    </div>
-    <ul ng-repeat='question in questions'>
-      <li>
-        <p>{{question.title}}</p>
-        <p>{{question.content}}</p>
-      </li>
-    </ul>
-  </div>
+
+
+  <a href='#/testRoute1/lalalala'>test route 1 + a param</a>
+  <a href="#/testRoute2">test route 2</a>
+  <a href="#/questions">Questions#Show</a>
+  <div ng-view></div>
 
   <script src='angular.min.js'></script>
   <script src='application.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
 </body>
 </html>

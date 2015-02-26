@@ -1,0 +1,18 @@
+<h1>A STATIC PAGE</h1>
+  <div ng-controller='QuestionsIndexCtrl' ng-id="">
+    <ul ng-repeat='question in questions'>
+      <li>
+        <p><a href="/questions/{{question.id}}">{{question.title}}</a></p>
+        <p>{{question.content}}</p>
+      </li>
+      <button ng-click="showEditor()">Edit</button>
+      <input ng-model="editQuestion" ng-show='editorShown'>
+      <button ng-click="getAnswers($index)">Answers</button>
+      <ul ng-repeat='answer in answers'>
+        <li>
+          <p>{{answer.title}}</p>
+          <p>{{answer.content}}</p>
+        </li>
+      </ul>
+    </ul>
+  </div>

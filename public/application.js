@@ -75,19 +75,19 @@ app.controller("QuestionsShowCtrl", function($scope, $http, $routeParams) {
   console.log("Inside QuestionsShowCtrl");
   getQuestion($scope, $http, $routeParams);
   getAnswers($scope, $http, $routeParams);
-  // $scope.getAnswers = function(id) {
-  //   console.log("GETTING THE ANSWER FROM Q: " + id);
-  //   console.log("new id: " + $questionId)
-  //   $http.get("/api/questions/" + $questionId + "/answers").
-  //   success(function(data){
-  //     console.log('sucess! data:' +data)
-  //     $scope.answers = data
-  //   }).
-  //   error(function(data) {
-  //     console.log(data);
-  //     console.log("getAnswers failed");
-  //   })
-  // }
+  $scope.newAnswerTitle = '';
+  $scope.newAnswerContent = '';
+  $scope.submitNewAnswer = function(){
+    $http.post('/api/questions/'+ $routeParams.id +'/answers',
+      {title: $scope.newAnswerTitle,
+        content: $scope.newAnswerContent}).
+    success(function(data){
+      console.log('able to submitNewAnswer. Data: '+data);
+    }).
+    error(function(data){
+      console.log('unable to submitNewAnswer. Data: '+data);
+    });
+  };
 
 });
 

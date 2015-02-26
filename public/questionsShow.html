@@ -14,3 +14,11 @@
   </li>
 </ul>
 
+<input ng-model='newAnswerTitle'><br>
+<textarea ng-model='newAnswerContent'></textarea>
+<button ng-click='submitNewAnswer()'>Submit</button>
+
+<div class='answer_list'>
+<p class="post_title">{{newAnswerTitle}}</p>
+<p>{{newAnswerContent}}</p>
+</div>

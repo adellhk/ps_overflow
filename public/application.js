@@ -4,14 +4,6 @@ app.config(['$routeProvider',
   function ($routeProvider) {
     console.log("hitting the route provider")
     $routeProvider.
-    when('/testRoute1/:message', {
-      templateUrl: "test1.html",
-      controller: "testCtrl1"
-    }).
-    when("/testRoute2", {
-      templateUrl: "test2.html",
-      controller: "testCtrl2"
-    }).
     when("/questions", {
       templateUrl: "questionsIndex.html",
       controller: "QuestionsIndexCtrl"
@@ -46,59 +38,46 @@ app.controller('QuestionsIndexCtrl', function($scope, $http){
 
 });
 
-// Functions
-function getQuestion($scope, $http, $routeParams) {
-  console.log("GETTING QUESTION");
-  $http.get('/api/questions/'+$routeParams.id).
-  success(function(data){
-    console.log('got Question! data:' +data);
-    $scope.question = data
-  }).
-  error(function(data){
-    console.log('failed to getQuestion. Data:' +data);
-  })
-};
-
-function getAnswers($scope, $http, $routeParams) {
-  $http.get('/api/questions/'+$routeParams.id+'/answers').
-  success(function(data){
-    console.log('able to getAnswers. Data: '+data);
-    $scope.answers = data;
-  }).
-  error(function(data){
-    console.log('unable to getAnswers. Data: '+data);
-  })
-};
 
 // Questions#Show action controller
 app.controller("QuestionsShowCtrl", function($scope, $http, $routeParams) {
   console.log("Inside QuestionsShowCtrl");
   getQuestion($scope, $http, $routeParams);
   getAnswers($scope, $http, $routeParams);
-  $scope.newAnswerTitle = '';
-  $scope.newAnswerContent = '';
   $scope.submitNewAnswer = function(){
     $http.post('/api/questions/'+ $routeParams.id +'/answers',
       {title: $scope.newAnswerTitle,
         content: $scope.newAnswerContent}).
     success(function(data){
-      console.log('able to submitNewAnswer. Data: '+data);
+      console.log('able to submitNewAnswer.');
     }).
     error(function(data){
-      console.log('unable to submitNewAnswer. Data: '+data);
+      console.log('unable to submitNewAnswer.');
     });
   };
-
 });
 
-// Test controllers
-app.controller("testCtrl1", function($scope, $routeParams) {
-  console.log("HITTING THE TEST CONTROLLER 1");
-  $scope.message = "and now a message from the anchor tag: "
-  + $routeParams["message"];
-});
+// Functions
+function getQuestion($scope, $http, $routeParams) {
+  console.log("GETTING QUESTION");
+  $http.get('/api/questions/'+$routeParams.id).
+  success(function(data){
+    console.log('got Question!');
+    $scope.question = data
+  }).
+  error(function(data){
+    console.log('failed to getQuestion.');
+  })
+};
 
-app.controller("testCtrl2", function($scope, $routeParams) {
-  console.log("HITTING THE TEST CONTROLLER 2");
-  $scope.message = "YOU ARE A GOD 2";
-});
+function getAnswers($scope, $http, $routeParams) {
+  $http.get('/api/questions/'+$routeParams.id+'/answers').
+  success(function(data){
+    console.log('able to getAnswers.');
+    $scope.answers = data;
+  }).
+  error(function(data){
+    console.log('unable to getAnswers.');
+  })
+};
+

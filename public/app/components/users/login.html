@@ -1,0 +1,14 @@
+<div class="central">
+  <label for="user_id">user_id:</label>
+  <input type="text" id="user_id" ng-model="credentials.user_id">
+
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" ng-model="credentials.password">
+  <br>
+  <button ng-click="usersLogin()">Login</button>
+<!-- usersLogin() -->
+
+  <p>{{credentials.user_id}}</p>
+  {{credentials.password}}
+</div>

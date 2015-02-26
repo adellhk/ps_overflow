@@ -40,3 +40,12 @@
   width: 40%;
   border-bottom: 1px solid black;
 }
+
+.central {
+    margin: auto;
+    width: 50%;
+    margin-top: 20%;
+    border: 3px outset gray;
+    padding: 5% 5%;
+    text-align: center;
+}

@@ -10,6 +10,10 @@ app.config(['$routeProvider',
       templateUrl: "/app/components/questions/questionsShow.html",
       controller: "QuestionsShowCtrl"
     }).
+    when("/login", {
+      templateUrl: "/app/components/users/login.html",
+      controller: "UsersLoginCtrl"
+    }).
     otherwise({
       redirectTo: "/index.html"
     });

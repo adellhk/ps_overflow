@@ -20,21 +20,20 @@ app.config(['$routeProvider',
 
 // Questions#Index controller
 app.controller('QuestionsIndexCtrl', function($scope, $http){
-  $scope.getQuestions = function() {
-    $http.get('/api/questions').
-    success(function(data) {
-      $scope.questions = data
+  getQuestions($scope, $http);
+  $scope.submitNewQuestion = function() {
+    $http.post('/api/questions',
+    {
+      title: $scope.newQuestionTitle,
+      content: $scope.newQuestionContent
     }).
-    error(function(data) {
-      console.log('getQuestions failed')
-    })
-  }
-  $scope.getQuestions();
-
-  $scope.editorShown = false
-  $scope.showEditor = function () {
-    $scope.editorShown = !$scope.editorShown;
-  }
+    success(function(data){
+      console.log('able to submitNewQuestion.');
+    }).
+    error(function(data){
+      console.log('unable to submitNewQuestion.');
+    });
+  };
 
 });
 
@@ -44,10 +43,12 @@ app.controller("QuestionsShowCtrl", function($scope, $http, $routeParams) {
   console.log("Inside QuestionsShowCtrl");
   getQuestion($scope, $http, $routeParams);
   getAnswers($scope, $http, $routeParams);
-  $scope.submitNewAnswer = function(){
+  $scope.submitNewAnswer = function() {
     $http.post('/api/questions/'+ $routeParams.id +'/answers',
-      {title: $scope.newAnswerTitle,
-        content: $scope.newAnswerContent}).
+    {
+      title: $scope.newAnswerTitle,
+      content: $scope.newAnswerContent
+    }).
     success(function(data){
       console.log('able to submitNewAnswer.');
     }).
@@ -81,3 +82,12 @@ function getAnswers($scope, $http, $routeParams) {
   })
 };
 
+function getQuestions($scope, $http) {
+  $http.get('/api/questions').
+  success(function(data) {
+    $scope.questions = data
+  }).
+  error(function(data) {
+    console.log('getQuestions failed')
+  })
+}

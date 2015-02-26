@@ -10,7 +10,6 @@ class QuestionsController < ApplicationController
 
   def create
     Question.create(
-      question_id: params[:question_id],
       title: params[:title],
       content: params[:content],
       user_id: params[:user_id]

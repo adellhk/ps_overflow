@@ -43,4 +43,43 @@ app.controller("QuestionsShowCtrl", function($scope, $http, $routeParams) {
       console.log('unable to submitNewAnswer.');
     });
   };
+
+  $scope.upvoteQuestion = function() {
+    $http.post("/api/questions/" + $routeParams.id+"/upvote").
+    success(function() {
+      $scope.question.vote_count++;
+    });
+  };
+
+  $scope.downvoteQuestion = function() {
+    $http.post("/api/questions/" + $routeParams.id+"/downvote").
+    success(function() {
+      $scope.question.vote_count--;
+    });
+  };
+
+  $scope.upvoteAnswer = function(index) {
+    $http.post("/api/questions/"+$routeParams.id+"/answers/"+$scope.answers[index].id + "/upvote").
+    success(function(){
+      console.log("Successfully upvoted an answer");
+      $scope.answers[index].vote_count++;
+    }).
+    error(function() {
+      console.log("Could not upvote an answer");
+      $scope.answers[index].vote_count--;
+    });
+  };
+
+ $scope.downvoteAnswer = function(index) {
+    $http.post("/api/questions/"+$routeParams.id+"/answers/"+$scope.answers[index].id + "/downvote").
+    success(function(){
+      console.log("Successfully downvote an answer");
+      $scope.answers[index].vote_count--;
+    }).
+    error(function() {
+      console.log("Could not downvote an answer");
+      $scope.answers[index].vote_count++;
+    });
+  };
+
 });
